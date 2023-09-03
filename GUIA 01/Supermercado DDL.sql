@@ -95,7 +95,7 @@ MontoVenta decimal(10,2),
 create table Detalle_Ventas(
 ID_Detalle_Venta int primary key identity(1,1),
 Cantidad_Producto int,
-ID_Pedido int,
+ID_Producto int,
 ID_Venta int
 );
 
@@ -121,7 +121,7 @@ alter table Proveedores add foreign key (ID_Direccion) references Direcciones(ID
 alter table Pedidos add foreign key (ID_Proveedor) references Proveedores(ID_Proveedor);
 alter table Detalle_Pedidos add foreign key (ID_Pedido) references Pedidos(ID_Pedido);
 alter table Detalle_Pedidos add foreign key (ID_Producto) references Productos(ID_Producto);
-alter table Detalle_Ventas add foreign key (ID_Pedido) references Pedidos(ID_Pedido);
+alter table Detalle_Ventas add foreign key (ID_Producto) references Productos(ID_Producto);
 alter table Detalle_Ventas add foreign key (ID_Venta) references Ventas(ID_Venta);
 alter table Facturas add foreign key (ID_Cliente) references Clientes(ID_Cliente);
 alter table Facturas add foreign key (ID_Venta) references Ventas(ID_Venta);
