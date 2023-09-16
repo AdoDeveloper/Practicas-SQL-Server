@@ -1,0 +1,51 @@
+Rol: Gerente
+Opciones:
+*Agregar nuevos empleados, gestion de cargos, Supervisor, RRHH:
+-Agregar: INSERT
+-Consultar: SELECT
+-Modificar UPDATE
+-Eliminar: DELETE 
+
+Rol: Supervisor
+Opciones:
+*Supervicion de los gastos y productos e inserción de datos de corte
+, Productos, Ventas.
+-Agregar: INSERT
+-Consultar: SELECT
+-Modificar: UPDATE
+
+Rol: RRHH
+Opciones:
+*Agregar nuevos empleados y modificar si es empleado activo o no
+, Cargos:
+- Consultar: SELECT
+- Agregar: INSERT
+- Actualizar: UPDATE	
+
+Rol: Contador
+Opciones:
+*Analizar y comunicar la información financiera, Ventas, Productos, Pedidos, Dettalle_Pedidos:
+- Consultar: SELECT
+
+Rol: Bodeguero
+Opciones:
+*Revisar, Actualizar y Agregar productos al stock, Proveedores
+, Productos, Pedidos, Detalle_Pedidos:
+- Consultar: SELECT
+- Agregar: INSERT
+- Actualizar: UPDATE	
+
+Rol: Cajero
+Opciones:
+*Gestionar productos, Ventas, Direcciones:
+- Consultar: SELECT (Productos, Direcciones, Distritos, Municipios, Departamentos, Ventas)
+- Agregar: INSERT (Ventas)
+- Actualizar: UPDATE 
+Rol: Sysadmin
+Opciones:
+*Administrador del sistema Empleados, Usuarios, Roles, AsignacionRolesOpciones, Opciones, 
+Direcciones, Distritos, Municipios, Departamentos: 
+- Consultar: SELECT
+- Agregar: INSERT
+- Actualizar: UPDATE
+- Eliminar: DELETE
