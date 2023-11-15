@@ -1,4 +1,4 @@
-USE Supermercado;
+USE Super;
 
 --De inserción: Debe agregar un registro nuevo a cualesquiera de las tablas de su base.
 CREATE PROCEDURE AgregarClientes
@@ -51,3 +51,18 @@ BEGIN
 END
 
 EXEC ObtenerMontoTotalCliente
+
+-- Procedimiento almacenado que realiza una inserción o actualización en una tabla (por ejemplo, la tabla Ventas)
+CREATE PROCEDURE InsertarVenta
+    @FechaVenta DATETIME,
+    @MontoVenta DECIMAL(10,2)
+AS
+BEGIN
+   
+    BEGIN
+        -- Inserta una nueva venta en la tabla Ventas
+        INSERT INTO Ventas ( FechaVenta, MontoVenta)
+        VALUES ( @FechaVenta, @MontoVenta);
+    END
+
+END;
